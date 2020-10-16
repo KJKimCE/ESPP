@@ -25,11 +25,11 @@
 /* Begin PBXFileReference section */
 		C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CurrentSale.hpp; sourceTree = "<group>"; };
 		C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TaxBracket.hpp; sourceTree = "<group>"; };
+		C7C2FB1225395C3C00EEFEA5 /* date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = date.h; sourceTree = "<group>"; };
 		C7CB5294253916D300DF04C7 /* FutureSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FutureSale.hpp; sourceTree = "<group>"; };
 		C7DA734B252E84BA000CA23B /* ESPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DA734E252E84BA000CA23B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C7DA7357252E8D19000CA23B /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
-		C7DA735D252E95A1000CA23B /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +50,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C7C2F915253953EE00EEFEA5 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
 		C7DA7342252E84BA000CA23B = {
 			isa = PBXGroup;
 			children = (
 				C7DA734D252E84BA000CA23B /* ESPP */,
+				C7C2F915253953EE00EEFEA5 /* third_party */,
 				C7DA734C252E84BA000CA23B /* Products */,
 				C733E8DA2537CE510079A5D5 /* Frameworks */,
 			);
@@ -75,7 +83,7 @@
 				C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */,
 				C7CB5294253916D300DF04C7 /* FutureSale.hpp */,
 				C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */,
-				C7DA735D252E95A1000CA23B /* Date.hpp */,
+				C7C2FB1225395C3C00EEFEA5 /* date.h */,
 			);
 			path = ESPP;
 			sourceTree = "<group>";
