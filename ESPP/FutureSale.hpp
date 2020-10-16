@@ -97,7 +97,6 @@ public:
         calcProfit();
         income = min(model.quantity * (predictedPrice - model.discountedPrice) - model.transactionCost, model.quantity * (model.purchasePrice - model.discountedPrice));
         calcFinalProceeds();
-        
     }
     
     void print() {
