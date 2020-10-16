@@ -50,18 +50,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7C2F915253953EE00EEFEA5 /* third_party */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = third_party;
-			sourceTree = "<group>";
-		};
 		C7DA7342252E84BA000CA23B = {
 			isa = PBXGroup;
 			children = (
 				C7DA734D252E84BA000CA23B /* ESPP */,
-				C7C2F915253953EE00EEFEA5 /* third_party */,
 				C7DA734C252E84BA000CA23B /* Products */,
 				C733E8DA2537CE510079A5D5 /* Frameworks */,
 			);
