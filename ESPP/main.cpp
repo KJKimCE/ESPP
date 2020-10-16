@@ -69,6 +69,7 @@ int main(int argc, const char * argv[]) {
     }
     
     cout << endl;
+    
     model.print();
     taxBracket.print();
     
