@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7DA734F252E84BA000CA23B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7DA734E252E84BA000CA23B /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7CB525E2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE650DE792304034819BBC38;
+			remoteInfo = BingRequest;
+		};
+		C7CB52602537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8CF66BE7805450E8F159ACE;
+			remoteInfo = SearchFile;
+		};
+		C7CB52622537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 767079C3A17448FBB054746C;
+			remoteInfo = blackjackclient;
+		};
+		C7CB52642537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC188B27269C4F8E882952FD;
+			remoteInfo = blackjackserver;
+		};
+		C7CB52662537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9EFA82668D14A7999924C6B;
+			remoteInfo = common_utilities;
+		};
+		C7CB52682537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AA15CB425C441D0A99E957D;
+			remoteInfo = cpprest;
+		};
+		C7CB526A2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94D85559B0E942B4B1E046E1;
+			remoteInfo = httpclient_test;
+		};
+		C7CB526C2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE28C967B94148ED9AC21508;
+			remoteInfo = httplistener_test;
+		};
+		C7CB526E2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63336A7623CB46968598AECD;
+			remoteInfo = httptest_utilities;
+		};
+		C7CB52702537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D101B08F41E4C2D89F55375;
+			remoteInfo = json_test;
+		};
+		C7CB52722537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8C7A3D326B649388F6F061D;
+			remoteInfo = oauth1client;
+		};
+		C7CB52742537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08957EBC5F3249CD956DDB4B;
+			remoteInfo = oauth2client;
+		};
+		C7CB52762537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB14FA0407824990A68E51C9;
+			remoteInfo = pplx_test;
+		};
+		C7CB52782537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08818A4167D045F4BF8A3861;
+			remoteInfo = streams_test;
+		};
+		C7CB527A2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 67B022F1A5F24448B258FE1A;
+			remoteInfo = test_runner;
+		};
+		C7CB527C2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E3878C3DE014537A3CF27B2;
+			remoteInfo = unittestpp;
+		};
+		C7CB527E2537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 576FB52A29A742BFB0E3936D;
+			remoteInfo = uri_test;
+		};
+		C7CB52802537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 550BEE98EAA9489098628BCC;
+			remoteInfo = utils_test;
+		};
+		C7CB52822537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 760B9632114749EAB20A4EC4;
+			remoteInfo = websocketsclient_test;
+		};
+		C7CB52842537E40300DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 086E9039C75E4861BA17AA49;
+			remoteInfo = websockettest_utilities;
+		};
+		C7CB52872537E51900DF04C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4A0D2409994CFCA83DDE0E;
+			remoteInfo = httpclient_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7DA7349252E84BA000CA23B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CurrentSale.hpp; sourceTree = "<group>"; };
+		C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TaxBracket.hpp; sourceTree = "<group>"; };
+		C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cpprestsdk.xcodeproj; path = ../casablanca/build.release/cpprestsdk.xcodeproj; sourceTree = "<group>"; };
+		C7CB5294253916D300DF04C7 /* FutureSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FutureSale.hpp; sourceTree = "<group>"; };
+		C7DA734B252E84BA000CA23B /* ESPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DA734E252E84BA000CA23B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C7DA7357252E8D19000CA23B /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		C7DA735D252E95A1000CA23B /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7DA7348252E84BA000CA23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C733E8DA2537CE510079A5D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7CB52432537E40300DF04C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB525F2537E40300DF04C7 /* BingRequest */,
+				C7CB52612537E40300DF04C7 /* SearchFile */,
+				C7CB52632537E40300DF04C7 /* blackjackclient */,
+				C7CB52652537E40300DF04C7 /* blackjackserver */,
+				C7CB52672537E40300DF04C7 /* libcommon_utilities.dylib */,
+				C7CB52692537E40300DF04C7 /* libcpprest.dylib */,
+				C7CB526B2537E40300DF04C7 /* libhttpclient_test.dylib */,
+				C7CB526D2537E40300DF04C7 /* libhttplistener_test.dylib */,
+				C7CB526F2537E40300DF04C7 /* libhttptest_utilities.dylib */,
+				C7CB52712537E40300DF04C7 /* libjson_test.dylib */,
+				C7CB52732537E40300DF04C7 /* oauth1client */,
+				C7CB52752537E40300DF04C7 /* oauth2client */,
+				C7CB52772537E40300DF04C7 /* libpplx_test.dylib */,
+				C7CB52792537E40300DF04C7 /* libstreams_test.dylib */,
+				C7CB527B2537E40300DF04C7 /* test_runner */,
+				C7CB527D2537E40300DF04C7 /* libunittestpp.dylib */,
+				C7CB527F2537E40300DF04C7 /* liburi_test.dylib */,
+				C7CB52812537E40300DF04C7 /* libutils_test.dylib */,
+				C7CB52832537E40300DF04C7 /* libwebsocketsclient_test.dylib */,
+				C7CB52852537E40300DF04C7 /* libwebsockettest_utilities.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7DA7342252E84BA000CA23B = {
+			isa = PBXGroup;
+			children = (
+				C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */,
+				C7DA734D252E84BA000CA23B /* ESPP */,
+				C7DA734C252E84BA000CA23B /* Products */,
+				C733E8DA2537CE510079A5D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7DA734C252E84BA000CA23B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7DA734B252E84BA000CA23B /* ESPP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7DA734D252E84BA000CA23B /* ESPP */ = {
+			isa = PBXGroup;
+			children = (
+				C7DA734E252E84BA000CA23B /* main.cpp */,
+				C7DA7357252E8D19000CA23B /* Model.hpp */,
+				C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */,
+				C7CB5294253916D300DF04C7 /* FutureSale.hpp */,
+				C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */,
+				C7DA735D252E95A1000CA23B /* Date.hpp */,
+			);
+			path = ESPP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7DA734A252E84BA000CA23B /* ESPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DA7352252E84BA000CA23B /* Build configuration list for PBXNativeTarget "ESPP" */;
+			buildPhases = (
+				C7DA7347252E84BA000CA23B /* Sources */,
+				C7DA7348252E84BA000CA23B /* Frameworks */,
+				C7DA7349252E84BA000CA23B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7CB52882537E51900DF04C7 /* PBXTargetDependency */,
+			);
+			name = ESPP;
+			productName = ESPP;
+			productReference = C7DA734B252E84BA000CA23B /* ESPP */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7DA7343252E84BA000CA23B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C7DA734A252E84BA000CA23B = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C7DA7346252E84BA000CA23B /* Build configuration list for PBXProject "ESPP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7DA7342252E84BA000CA23B;
+			productRefGroup = C7DA734C252E84BA000CA23B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C7CB52432537E40300DF04C7 /* Products */;
+					ProjectRef = C7CB52422537E40300DF04C7 /* cpprestsdk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C7DA734A252E84BA000CA23B /* ESPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C7CB525F2537E40300DF04C7 /* BingRequest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = BingRequest;
+			remoteRef = C7CB525E2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52612537E40300DF04C7 /* SearchFile */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = SearchFile;
+			remoteRef = C7CB52602537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52632537E40300DF04C7 /* blackjackclient */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = blackjackclient;
+			remoteRef = C7CB52622537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52652537E40300DF04C7 /* blackjackserver */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = blackjackserver;
+			remoteRef = C7CB52642537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52672537E40300DF04C7 /* libcommon_utilities.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcommon_utilities.dylib;
+			remoteRef = C7CB52662537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52692537E40300DF04C7 /* libcpprest.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			name = libcpprest.dylib;
+			path = libcpprest.2.10.dylib;
+			remoteRef = C7CB52682537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB526B2537E40300DF04C7 /* libhttpclient_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libhttpclient_test.dylib;
+			remoteRef = C7CB526A2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB526D2537E40300DF04C7 /* libhttplistener_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libhttplistener_test.dylib;
+			remoteRef = C7CB526C2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB526F2537E40300DF04C7 /* libhttptest_utilities.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libhttptest_utilities.dylib;
+			remoteRef = C7CB526E2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52712537E40300DF04C7 /* libjson_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libjson_test.dylib;
+			remoteRef = C7CB52702537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52732537E40300DF04C7 /* oauth1client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = oauth1client;
+			remoteRef = C7CB52722537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52752537E40300DF04C7 /* oauth2client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = oauth2client;
+			remoteRef = C7CB52742537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52772537E40300DF04C7 /* libpplx_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libpplx_test.dylib;
+			remoteRef = C7CB52762537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52792537E40300DF04C7 /* libstreams_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libstreams_test.dylib;
+			remoteRef = C7CB52782537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB527B2537E40300DF04C7 /* test_runner */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_runner;
+			remoteRef = C7CB527A2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB527D2537E40300DF04C7 /* libunittestpp.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libunittestpp.dylib;
+			remoteRef = C7CB527C2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB527F2537E40300DF04C7 /* liburi_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liburi_test.dylib;
+			remoteRef = C7CB527E2537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52812537E40300DF04C7 /* libutils_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libutils_test.dylib;
+			remoteRef = C7CB52802537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52832537E40300DF04C7 /* libwebsocketsclient_test.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwebsocketsclient_test.dylib;
+			remoteRef = C7CB52822537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7CB52852537E40300DF04C7 /* libwebsockettest_utilities.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libwebsockettest_utilities.dylib;
+			remoteRef = C7CB52842537E40300DF04C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7DA7347252E84BA000CA23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DA734F252E84BA000CA23B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7CB52882537E51900DF04C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = httpclient_test;
+			targetProxy = C7CB52872537E51900DF04C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C7DA7350252E84BA000CA23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C7DA7351252E84BA000CA23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C7DA7353252E84BA000CA23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7DA7354252E84BA000CA23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7DA7346252E84BA000CA23B /* Build configuration list for PBXProject "ESPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DA7350252E84BA000CA23B /* Debug */,
+				C7DA7351252E84BA000CA23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DA7352252E84BA000CA23B /* Build configuration list for PBXNativeTarget "ESPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DA7353252E84BA000CA23B /* Debug */,
+				C7DA7354252E84BA000CA23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7DA7343252E84BA000CA23B /* Project object */;
+}
