@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CurrentSale.hpp; sourceTree = "<group>"; };
+		C733E8C4252EB86A0079A5D5 /* Regime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Regime.hpp; sourceTree = "<group>"; };
 		C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TaxBracket.hpp; sourceTree = "<group>"; };
 		C7C2FB1225395C3C00EEFEA5 /* date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = date.h; sourceTree = "<group>"; };
 		C7CB5294253916D300DF04C7 /* FutureSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FutureSale.hpp; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			children = (
 				C7DA734E252E84BA000CA23B /* main.cpp */,
 				C7DA7357252E8D19000CA23B /* Model.hpp */,
-				C733E8C4252EB86A0079A5D5 /* CurrentSale.hpp */,
+				C733E8C4252EB86A0079A5D5 /* Regime.hpp */,
 				C7CB5294253916D300DF04C7 /* FutureSale.hpp */,
 				C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */,
 				C7C2FB1225395C3C00EEFEA5 /* date.h */,

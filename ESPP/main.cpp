@@ -8,14 +8,14 @@
 #include <iostream>
 #include <vector>
 #include "Model.hpp"
-#include "CurrentSale.hpp"
+#include "Regime.hpp"
 #include "FutureSale.hpp"
 #include "TaxBracket.hpp"
 
 using namespace date;
 
 Model buildModel() {
-    double grantPrice, exercisePrice, currentPrice, quantity, transactionCost;
+    double grantPrice, exercisePrice, currentPrice, quantity, transactionCost, db;
     int y, m, d;
     
     cout << "Enter grant price: ";
@@ -26,14 +26,16 @@ Model buildModel() {
     cin >> currentPrice;
     cout << "Enter Quantity: ";
     cin >> quantity;
-    cout << "Enter Transaction Cost: ";
-    cin >> transactionCost;
     cout << "Enter Purchase Date: Year, Month, Date" << endl;
     cin >> y >> m >> d;
+    cout << "Enter Transaction Cost: ";
+    cin >> transactionCost;
+    cout << "Enter Diversification Benefit: ";
+    cin >> db;
     
     year_month_day purchaseDate = year(y)/m/d;
     
-    return Model(grantPrice, exercisePrice, currentPrice, quantity, transactionCost, purchaseDate);
+    return Model(grantPrice, exercisePrice, currentPrice, quantity, transactionCost, db, purchaseDate);
 }
 
 TaxBracket buildTaxBracket() {
@@ -46,7 +48,7 @@ TaxBracket buildTaxBracket() {
     cout << "Enter Tax Bracket % (xx.xx) - Long Term: ";
     cin >> longTerm;
     
-    return TaxBracket(income, shortTerm, longTerm);
+    return TaxBracket(income / 100, shortTerm / 100, longTerm / 100);
 }
 
 int main(int argc, const char * argv[]) {
@@ -64,8 +66,8 @@ int main(int argc, const char * argv[]) {
     } else {
 //        year_month_day ymd = floor<days>(chrono::system_clock::now());
         year_month_day ymd = (year)2020/3/30;
-        model = Model(47, 60.90, 70, 1, 0, ymd);
-        taxBracket = TaxBracket(31.82, 30, 21);
+        model = Model(47, 60.90, 70, 1, 0, .01, ymd);
+        taxBracket = TaxBracket(.3182, .3, .21);
     }
     
     cout << endl;
@@ -73,14 +75,17 @@ int main(int argc, const char * argv[]) {
     model.print();
     taxBracket.print();
     
-    CurrentSaleModel csm = CurrentSaleModel(model, taxBracket);
+    CurrentSales csm = CurrentSales(model, taxBracket);
     csm.print();
     
-    DisqualifyingLongFuture dlf = DisqualifyingLongFuture(model, csm.disqualifyingLong, taxBracket);
-    dlf.print();
+    int y, m, d;
+    cout << "Enter Purchase Date: Year, Month, Date" << endl;
+    cin >> y >> m >> d;
     
-    QualifyingFuture qf = QualifyingFuture(model, csm.qualifying, taxBracket);
-    qf.print();
+    Future future = Future(model, taxBracket, csm, (year)y/m/d);
+    future.print();
+    
+    for (auto& b : future.benefits) b.print();
     
     return 0;
 }

@@ -22,9 +22,9 @@ public:
     TaxBracket() {}
     
     TaxBracket(double _income, double _shortTerm, double _longTerm) {
-        income = _income / 100;
-        shortTerm = _shortTerm / 100;
-        longTerm = _longTerm / 100;
+        income = _income;
+        shortTerm = _shortTerm;
+        longTerm = _longTerm;
     }
     
     void print() {

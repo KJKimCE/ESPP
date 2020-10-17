@@ -31,10 +31,11 @@ public:
     sys_days today;
     
     double transactionCost;
+    double diversificationBenefit;
     
     Model() {}
     
-    Model(double _grantPrice, double _exercisePrice, double _currentPrice, double _quantity, double _transactionCost, year_month_day _purchaseDate) {
+    Model(double _grantPrice, double _exercisePrice, double _currentPrice, double _quantity, double _transactionCost, double _db, year_month_day _purchaseDate) {
         grantPrice = _grantPrice;
         exercisePrice = _exercisePrice;
         purchasePrice = min(grantPrice, exercisePrice);
@@ -48,6 +49,7 @@ public:
         today = floor<days>(chrono::system_clock::now());
         
         transactionCost = _transactionCost;
+        diversificationBenefit = _db;
     }
     
     void print() {
@@ -61,8 +63,9 @@ public:
         cout << "Purchase Price: " << purchasePrice << endl;
         cout << "Discounted Price: " << discountedPrice << endl;
         cout << "Quantity: " << quantity << endl;
-        cout << "Transaction Cost: " << transactionCost << endl;
         cout << "Current Price: " << currentPrice << endl;
+        cout << "Transaction Cost: " << transactionCost << endl;
+        cout << "Diversification Benefit: " << diversificationBenefit * 100 << "%" << endl;
         cout << endl;
     }
 };

@@ -5,14 +5,15 @@
 //  Created by Kyu Jin Kim on 10/7/20.
 //
 
-#ifndef CurrentSale_hpp
-#define CurrentSale_hpp
+#ifndef Regime_hpp
+#define Regime_hpp
 
 #include "Model.hpp"
 #include "TaxBracket.hpp"
 
-class CurrentSale {
+class Regime {
 public:
+    string regimeType;
     double saleProceeds;
     double saleProfit;
     double income;
@@ -23,10 +24,10 @@ public:
     
     sys_days dateFrom, dateTo;
     
-    CurrentSale() {}//cout << "base constructor called" << endl;}
+    Regime() {}//cout << "base constructor called" << endl;}
     
-    void initialize(Model& model) {
-        saleProceeds = model.quantity * model.currentPrice - model.transactionCost;
+    void initialize(Model& model, double price) {
+        saleProceeds = model.quantity * price - model.transactionCost;
         saleProfit = saleProceeds - model.quantity * model.discountedPrice;
     }
     
@@ -49,18 +50,10 @@ public:
     }
 };
 
-class DisqualifyingShort : public CurrentSale {
-public:
-    DisqualifyingShort() {}
-    
-    DisqualifyingShort(Model& model, TaxBracket& taxBracket) {
-        //cout << "Disqualifying Short Constructor Called" << endl;
-        initialize(model);
-        setInfo(model);
-        calculateTaxes(taxBracket);
-    }
-    
+class DisqualifyingShort : public Regime {
+private:
     void setInfo(Model& model) {
+        regimeType = "Disqualifying Short";
         dateFrom = model.exerciseDate + days{45};
         dateTo = model.purchaseDate + days{365} + days{45};
         
@@ -68,25 +61,26 @@ public:
         shortTerm = saleProfit - income;
         longTerm = 0;
     }
+public:
+    DisqualifyingShort() {}
+    
+    DisqualifyingShort(Model& model, TaxBracket& taxBracket, double price) {
+        //cout << "Disqualifying Short Constructor Called" << endl;
+        initialize(model, price);
+        this->setInfo(model);
+        calculateTaxes(taxBracket);
+    }
     
     void print() {
         cout << "Disqualifying Short:" << endl;
-        CurrentSale::print();
+        Regime::print();
     }
 };
 
-class DisqualifyingLong : public CurrentSale {
-public:
-    DisqualifyingLong() {}
-    
-    DisqualifyingLong(Model& model, TaxBracket& taxBracket) {
-//        cout << "Disqualifying Long Constructor Called" << endl;
-        initialize(model);
-        setInfo(model);
-        calculateTaxes(taxBracket);
-    }
-
+class DisqualifyingLong : public Regime {
+private:
     void setInfo(Model& model) {
+        regimeType = "Disqualifying Long";
         dateFrom = model.purchaseDate + days{365} + days{45};
         dateTo = max(model.grantDate + days{730}, model.exerciseDate + days{365}) + days{15};
         
@@ -94,25 +88,26 @@ public:
         shortTerm = 0;
         longTerm = saleProfit - income;
     }
+public:
+    DisqualifyingLong() {}
+    
+    DisqualifyingLong(Model& model, TaxBracket& taxBracket, double price) {
+//        cout << "Disqualifying Long Constructor Called" << endl;
+        initialize(model, price);
+        this->setInfo(model);
+        calculateTaxes(taxBracket);
+    }
     
     void print() {
         cout << "Disqualifying Long:" << endl;
-        CurrentSale::print();
+        Regime::print();
     }
 };
 
-class Qualifying : public CurrentSale {
-public:
-    Qualifying() {}
-    
-    Qualifying(Model& model, TaxBracket& taxBracket) {
-//        cout << "Qualifying Constructor Called" << endl;
-        initialize(model);
-        setInfo(model);
-        calculateTaxes(taxBracket);
-    }
-
+class Qualifying : public Regime {
+private:
     void setInfo(Model& model) {
+        regimeType = "Qualifying";
         dateFrom = max(model.grantDate + days{730}, model.exerciseDate + days{365}) + days{15};
         dateTo = year(9999)/12/31;
         
@@ -120,25 +115,39 @@ public:
         shortTerm = 0;
         longTerm = saleProfit - income;
     }
+public:
+    Qualifying() {}
+    
+    Qualifying(Model& model, TaxBracket& taxBracket, double price) {
+//        cout << "Qualifying Constructor Called" << endl;
+        initialize(model, price);
+        this->setInfo(model);
+        calculateTaxes(taxBracket);
+    }
     
     void print() {
         cout << "Qualifying:" << endl;
-        CurrentSale::print();
+        Regime::print();
     }
 };
 
-class CurrentSaleModel {
+class CurrentSales {
 public:
     DisqualifyingShort disqualifyingShort;
     DisqualifyingLong disqualifyingLong;
     Qualifying qualifying;
+    vector<pair<string, pair<sys_days, sys_days>>> regime_dates;
     
-    CurrentSaleModel() {}
+    CurrentSales() {}
     
-    CurrentSaleModel(Model& model, TaxBracket& taxBracket) {
-        disqualifyingShort = DisqualifyingShort(model, taxBracket);
-        disqualifyingLong = DisqualifyingLong(model, taxBracket);
-        qualifying = Qualifying(model, taxBracket);
+    CurrentSales(Model& model, TaxBracket& taxBracket) {
+        disqualifyingShort = DisqualifyingShort(model, taxBracket, model.currentPrice);
+        disqualifyingLong = DisqualifyingLong(model, taxBracket, model.currentPrice);
+        qualifying = Qualifying(model, taxBracket, model.currentPrice);
+        
+        regime_dates.push_back(make_pair("Disqualifying Short", make_pair(disqualifyingShort.dateFrom, disqualifyingShort.dateTo)));
+        regime_dates.push_back(make_pair("Disqualifying Long", make_pair(disqualifyingLong.dateFrom, disqualifyingLong.dateTo)));
+        regime_dates.push_back(make_pair("Qualifying", make_pair(qualifying.dateFrom, qualifying.dateTo)));
     }
     
     void print() {
