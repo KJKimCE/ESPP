@@ -1,9 +1,6 @@
 [submodule "third_party/date"]
 	path = third_party/date
 	url = https://github.com/KJKimCE/date.git
-[submodule "third_party/cpprestsdk"]
-	path = third_party/cpprestsdk
-	url = https://github.com/KJKimCE/cpprestsdk.git
 [submodule "third_party/cpr"]
 	path = third_party/cpr
 	url = https://github.com/KJKimCE/cpr.git
