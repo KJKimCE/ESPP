@@ -10,6 +10,7 @@ Current Price (potentially link casablanca to import this using an API)
 Quantity
 Transaction Cost
 Purchase Date
+Diversification Benefit
 
 Tax Bracket:
 Income
