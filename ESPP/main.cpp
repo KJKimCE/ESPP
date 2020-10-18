@@ -11,6 +11,8 @@
 #include "Regime.hpp"
 #include "FutureSale.hpp"
 #include "TaxBracket.hpp"
+#include "cpr/api.h"
+#include "cpr/cpr.h"
 
 using namespace date;
 
