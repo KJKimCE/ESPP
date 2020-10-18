@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C7DA734A252E84BA000CA23B"
                BuildableName = "ESPP"
                BlueprintName = "ESPP"
-               ReferencedContainer = "container:ESPP.xcodeproj">
+               ReferencedContainer = "container:espp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "C7DA734A252E84BA000CA23B"
             BuildableName = "ESPP"
             BlueprintName = "ESPP"
-            ReferencedContainer = "container:ESPP.xcodeproj">
+            ReferencedContainer = "container:espp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "C7DA734A252E84BA000CA23B"
             BuildableName = "ESPP"
             BlueprintName = "ESPP"
-            ReferencedContainer = "container:ESPP.xcodeproj">
+            ReferencedContainer = "container:espp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
