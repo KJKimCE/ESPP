@@ -13,8 +13,8 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		C7DA7349252E84BA000CA23B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -27,6 +27,7 @@
 		C72A2B6F253CC12500BA4BC1 /* cpprest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cpprest; path = third_party/cpprestsdk/Release/include/cpprest; sourceTree = "<group>"; };
 		C733E8C4252EB86A0079A5D5 /* Regime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Regime.hpp; sourceTree = "<group>"; };
 		C733E8C8252EB8BD0079A5D5 /* TaxBracket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TaxBracket.hpp; sourceTree = "<group>"; };
+		C73F3CE1253CD1E800188DFE /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		C7CB5294253916D300DF04C7 /* FutureSale.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FutureSale.hpp; sourceTree = "<group>"; };
 		C7DA734B252E84BA000CA23B /* ESPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ESPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DA734E252E84BA000CA23B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		C733E8DA2537CE510079A5D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C73F3CE1253CD1E800188DFE /* XcodeKit.framework */,
 				C72A2B6F253CC12500BA4BC1 /* cpprest */,
 			);
 			name = Frameworks;
@@ -263,7 +265,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					$SRCROOT/third_party/date/include/,
-					$SRCROOT/third_party/cpprestsdk/Release/include/,
 					$SRCROOT/third_party/cpr/include/,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,7 +278,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
 					$SRCROOT/third_party/date/include/,
-					$SRCROOT/third_party/cpprestsdk/Release/include/,
 					$SRCROOT/third_party/cpr/include/,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
