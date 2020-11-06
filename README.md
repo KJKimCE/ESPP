@@ -13,14 +13,16 @@ Credits:
 - Kyu Jin Kim - Python Project
 
 ## Description ##
-This project runs a model for an Employee Stock Purchase Plan model and compares the different strategies between holding stocks based on the following inputs:
+Initial Draft to translate an ESPP model into an object with inputs as:
 
 Model:
 
-    Symbol
+    Grant Price
+    Exercise Price
+    Current Price (potentially link casablanca to import this using an API)
     Quantity
-    Purchase Date
     Transaction Cost
+    Purchase Date
     Diversification Benefit
 
 Tax Bracket:
@@ -28,7 +30,3 @@ Tax Bracket:
     Income
     Short Term
     Long Term
-    
-Future Sale (Loop):
-
-    Future Date
